@@ -1,3 +1,7 @@
+# ICRC Fork
+A fork to remove some spa settings that introduce some security issue 
+Remove the settings  `Body content URL` and `Head content URL` parameters
+
 # OpenMRS Module SPA
 
 ![Build Status](https://github.com/openmrs/openmrs-module-spa/workflows/Build%20with%20Maven/badge.svg)
