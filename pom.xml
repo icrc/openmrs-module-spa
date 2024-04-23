@@ -113,15 +113,10 @@
 	</repositories>
 	<distributionManagement>
 		<repository>
-			<id>openmrs-repo-modules</id>
-			<name>OpenMRS Nexus Repository</name>
-			<url>https://mavenrepo.openmrs.org/nexus/content/repositories/modules</url>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/icrc/openmrs-module-spa</url>
 		</repository>
-		<snapshotRepository>
-			<id>openmrs-repo-snapshots</id>
-			<name>OpenMRS Snapshots</name>
-			<url>https://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
 	</distributionManagement>
 
 	<pluginRepositories>
