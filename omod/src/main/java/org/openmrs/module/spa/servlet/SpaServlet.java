@@ -32,9 +32,11 @@ public class SpaServlet extends HttpServlet {
 
 		String openmrsBaseUrlContext = req.getContextPath();
 		AdministrationService service = Context.getAdministrationService();
+		String importMapUrl = openmrsBaseUrlContext + "/frontend/import-map.json";
 		req.setAttribute("openmrsBaseUrlContext", openmrsBaseUrlContext);
 		req.setAttribute("spaBaseUrlContext",
 				service.getGlobalProperty(GP_KEY_SPA_BASE_URL, DEFAULT_SPA_BASE_URL));
+		req.setAttribute("importMapUrl", importMapUrl);
 
 		dispatcher.forward(req, resp);
 	}
